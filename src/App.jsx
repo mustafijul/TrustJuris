@@ -1,17 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+
+import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import Services from './components/Services'
 import CasesPage from './components/CasesPage';
 import BlogPage from './components/BlogPage';
 import ContactPage from './components/ContactPage';
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Header />
+       <Header></Header>
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
