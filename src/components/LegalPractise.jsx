@@ -1,10 +1,11 @@
 import React from 'react';
+import icon1 from "../assets/images/business.png"
 
 const LegalPractice = () => {
   const practiceAreas = [
     {
       id: 1,
-      icon: '/images/business.png',
+      icon: {icon1},
       title: 'Business Law',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
@@ -54,7 +55,7 @@ const LegalPractice = () => {
         {practiceAreas.map(area => (
           <div key={area.id} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
             <figure className="px-10 pt-10">
-              <img src={area.icon} alt={area.title} className="rounded-xl h-16" />
+              <img src={icon1} alt={area.title} className="rounded-xl h-16" />
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title">{area.title}</h3>

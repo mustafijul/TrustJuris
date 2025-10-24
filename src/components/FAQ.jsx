@@ -1,5 +1,5 @@
 import React from 'react';
-
+import faq from "../assets/images/faq.png"
 const FAQ = () => {
   const faqs = [
     {
@@ -46,7 +46,7 @@ const FAQ = () => {
           </div>
         </div>
         <div className="flex-1">
-          <img src="/images/faq.png" alt="FAQ" className="w-full max-w-md mx-auto" />
+          <img src={faq} alt="FAQ" className="w-full max-w-md mx-auto" />
         </div>
       </div>
     </section>

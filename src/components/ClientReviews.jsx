@@ -1,5 +1,5 @@
 import React from 'react';
-
+import player1 from "../assets/images/player-1.png"
 const ClientReviews = () => {
   const reviews = [
     {
@@ -50,7 +50,7 @@ const ClientReviews = () => {
               <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-2xl">
                   <img 
-                    src={review.image} 
+                    src={player1} 
                     alt={review.name} 
                     className="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-white"
                   />
